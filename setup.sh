@@ -45,4 +45,6 @@ ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
 
+git config --global user.name "RV"
+git config --global user.email rvstartup@gmail.com
 
