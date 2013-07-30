@@ -4,7 +4,8 @@
 
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
-sudo apt-get install -y git-core
+sudo apt-get install -y git
+sudo apt-get install -y curl
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
 # Load nvm and install latest production node
@@ -16,6 +17,9 @@ nvm use v0.10.12
 # http://jshint.com/
 npm install -g jshint
 
+# Install express
+npm install -g express
+
 # Install rlwrap to provide libreadline features with node
 # See: http://nodejs.org/api/repl.html#repl_repl
 sudo apt-get install -y rlwrap
@@ -24,7 +28,7 @@ sudo apt-get install -y rlwrap
 # https://launchpad.net/~cassou/+archive/emacs
 sudo apt-add-repository -y ppa:cassou/emacs
 sudo apt-get update
-sudo apt-get install -y emacs24 emacs24-el emacs24-common-non-dfsg
+sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
 
 # Install Heroku toolbelt
 # https://toolbelt.heroku.com/debian
